@@ -7,7 +7,7 @@
     "types": "dist/lib.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jakehamilton/leverage-plugin-socket.io"
+        "url": "https://github.com/jakehamilton/leverage-plugin-websocket"
     },
     "license": "MIT",
     "files": [
