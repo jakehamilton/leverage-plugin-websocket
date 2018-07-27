@@ -1,12 +1,13 @@
-# @leverage/plugin-websocket
+# WebSockets for [Leverage](https://github.com/jakehamilton/leverage)!
 
-✨ WebSockets support for [Leverage](https://github.com/jakehamilton/leverage)!
+This is a plugin for Leverage that handles the `websocket` type of components.
 
 <p align="center">
-    <img src="https://img.shields.io/npm/v/@leverage/plugin-websocket.svg?label=version&style=for-the-badge">
-    <img src="https://img.shields.io/travis/jakehamilton/leverage-plugin-socket.io.svg?style=for-the-badge">
-    <img src="https://img.shields.io/badge/typescript-%5E2.9.2-brightgreen.svg?style=for-the-badge">
-    <img src="https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80%20semantic release-%5E15.5.2-brightgreen.svg?style=for-the-badge">
+    <img src="https://img.shields.io/badge/leverage-plugin-blue.svg?style=for-the-badge">
+    <img src="https://img.shields.io/npm/v/@leverage/plugin-websocket.svg?style=for-the-badge">
+    <img src="https://img.shields.io/travis/jakehamilton/leverage-plugin-websocket.svg?style=for-the-badge">
+    <img src="https://img.shields.io/coveralls/github/jakehamilton/leverage-plugin-websocket.svg?style=for-the-badge">
+    <img src="https://img.shields.io/badge/semantic_release_🚀📦-enabled-brightgreen.svg?style=for-the-badge">
 </p>
 
 ## WebSocket Component
@@ -68,7 +69,7 @@ new WebSocket({
 ## Example
 
 ```typescript
-import { manager } from '@leverage/core';
+import { Manager } from '@leverage/core';
 import { WebSocket, WebSocketComponent } from '@leverage/plugin-websocket';
 
 // You need an HTTP plugin to use WebSockets
@@ -76,6 +77,8 @@ import { HTTP } from '@leverage/plugin-http';
 
 const http = new HTTP();
 const websocket = new WebSocket();
+
+const manager = new Manager();
 
 const component: WebSocketComponent = {
     is: 'component',
